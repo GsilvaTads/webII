@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aula 03 - <%= board.name %></title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-slate-100 min-h-screen">
+    <header class="bg-slate-900 text-white px-6 py-4 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+      <div>
+        <h1 class="text-xl font-semibold"><%= board.name %></h1>
+        <p class="text-slate-300 text-sm">
+          Disciplina: WEBII (2026/2) | Trabalho 1 | Aluno: Gustavo Silva | Professor: Vinícius Fritzen Machado          
+        </p>
+
+        <!-- Seletor de Múltiplos Quadros (Atividade 11) -->
+        <% if (typeof allBoards !== 'undefined' && allBoards.length > 1) { %>
+          <div class="flex items-center gap-2 mt-3">
+            <span class="text-xs text-slate-400 font-medium">Trocar quadro:</span>
+            <div class="flex gap-1.5">
+              <% allBoards.forEach((b) => { %>
+                <a
+                  href="/boards/<%= b.id %>"
+                  class="text-xs px-2.5 py-1 rounded transition <%= b.id === board.id ? 'bg-blue-600 text-white font-semibold' : 'bg-slate-800 text-slate-300 hover:bg-slate-700' %>"
+                >
+                  <%= b.name %>
+                </a>
+              <% }) %>
+            </div>
+          </div>
+        <% } %>
+      </div>
+
+      <!-- Barra de Busca (Atividade 9) -->
+      <form method="get" action="/cards/search" class="flex items-center gap-2">
+        <input
+          type="text"
+          name="query"
+          placeholder="Buscar cartões..."
+          class="border rounded px-3 py-1.5 text-sm bg-slate-800 text-white placeholder-slate-400 focus:outline-none focus:ring-1 focus:ring-slate-400"
+        />
+        <button
+          type="submit"
+          class="bg-slate-700 hover:bg-slate-600 text-white text-sm px-3 py-1.5 rounded transition font-medium"
+        >
+          Buscar
+        </button>
+      </form>
+    </header>
+
+    <main class="p-6 flex gap-4 overflow-x-auto items-start">
+      <% board.columns.forEach((column) => { %>
+        <section class="bg-white rounded-lg shadow w-80 flex-shrink-0">
+          <header class="px-4 py-3 border-b flex items-center justify-between">
+            <h2 class="font-medium text-slate-700"><%= column.name %></h2>
+            <span
+              class="text-xs px-2 py-1 rounded-full <%= column.isOverWipLimit ? 'bg-red-100 text-red-700' : 'bg-slate-100 text-slate-500' %>"
+            ><%= column.cards.length %><%= column.wipLimit !== null ? '/' + column.wipLimit : '' %></span>
+          </header>
+
+          <ul class="p-3 space-y-3 min-h-[80px]">
+            <% if (column.cards.length === 0) { %>
+              <li class="text-sm text-slate-400 italic">Sem cartões</li>
+            <% } %>
+            <% column.cards.forEach((card) => { %>
+              <li class="border rounded-md p-3 shadow-sm bg-slate-50 hover:bg-white transition flex flex-col gap-2">
+                <div class="flex justify-between items-start gap-2">
+                  <div>
+                    <a href="/cards/<%= card.id %>" class="text-sm font-medium text-slate-800 hover:text-blue-600 hover:underline">
+                      <%= card.title %>
+                    </a>
+                    <% if (card.description) { %>
+                      <p class="text-xs text-slate-500 mt-1"><%= card.description %></p>
+                    <% } %>
+                  </div>
+                  <form method="post" action="/cards/<%= card.id %>/delete" onsubmit="return confirm('Deseja realmente excluir este cartão?');">
+                    <button type="submit" title="Excluir cartão" class="text-slate-400 hover:text-red-600 transition text-sm">
+                      ✕
+                    </button>
+                  </form>
+                </div>
+
+                <div class="flex items-center justify-between pt-2 border-t border-slate-200/60">
+                  <span class="text-[11px] px-2 py-0.5 rounded-full font-medium <%= card.priorityBadgeClass %>">
+                    <%= card.priority %>
+                  </span>
+
+                  <div class="flex items-center gap-1">
+                    <% board.columns.forEach((targetCol) => { %>
+                      <% if (targetCol.id !== column.id) { %>
+                        <form method="post" action="/cards/<%= card.id %>/move" class="inline">
+                          <input type="hidden" name="columnId" value="<%= targetCol.id %>" />
+                          <button
+                            type="submit"
+                            title="Mover para <%= targetCol.name %>"
+                            class="text-[11px] px-2 py-1 bg-slate-200 hover:bg-slate-800 hover:text-white rounded transition text-slate-700 font-medium"
+                          >
+                            → <%= targetCol.name %>
+                          </button>
+                        </form>
+                      <% } %>
+                    <% }) %>
+                  </div>
+                </div>
+
+                <details class="text-xs border-t pt-1 mt-1 text-slate-500">
+                  <summary class="cursor-pointer hover:text-slate-800 select-none font-medium">✏️ Editar Cartão</summary>
+                  <form method="post" action="/cards/<%= card.id %>/update" class="flex flex-col gap-1.5 mt-2 bg-slate-100 p-2 rounded">
+                    <input
+                      type="text"
+                      name="title"
+                      value="<%= card.title %>"
+                      placeholder="Novo título..."
+                      required
+                      class="border rounded px-2 py-1 text-xs bg-white text-slate-800"
+                    />
+                    <input
+                      type="text"
+                      name="description"
+                      value="<%= card.description %>"
+                      placeholder="Nova descrição..."
+                      class="border rounded px-2 py-1 text-xs bg-white text-slate-800"
+                    />
+                    <select name="priority" class="border rounded px-2 py-1 text-xs bg-white text-slate-800">
+                      <option value="baixa" <%= card.priority === 'baixa' ? 'selected' : '' %>>baixa</option>
+                      <option value="média" <%= card.priority === 'média' ? 'selected' : '' %>>média</option>
+                      <option value="alta" <%= card.priority === 'alta' ? 'selected' : '' %>>alta</option>
+                    </select>
+                    <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white rounded px-2 py-1 font-medium transition">
+                      Salvar Alterações
+                    </button>
+                  </form>
+                </details>
+              </li>
+            <% }) %>
+          </ul>
+
+          <form method="post" action="/cards" class="p-3 border-t flex flex-col gap-2">
+            <input type="hidden" name="columnId" value="<%= column.id %>" />
+            <input
+              type="text"
+              name="title"
+              placeholder="Novo cartão..."
+              required
+              class="border rounded px-2 py-1.5 text-sm focus:outline-none focus:ring-1 focus:ring-slate-800"
+            />
+            <button type="submit" class="text-xs bg-slate-800 text-white font-medium rounded px-2 py-1.5 hover:bg-slate-700 transition">
+              Adicionar cartão
+            </button>
+          </form>
+        </section>
+      <% }) %>
+
+      <section class="bg-slate-200/70 border-2 border-dashed border-slate-300 rounded-lg p-4 w-72 flex-shrink-0">
+        <h2 class="font-medium text-slate-700 text-sm mb-3">+ Nova Coluna</h2>
+        <form method="post" action="/columns" class="flex flex-col gap-2">
+          <input
+            type="text"
+            name="name"
+            placeholder="Nome da coluna..."
+            required
+            class="border rounded px-2 py-1.5 text-sm bg-white focus:outline-none focus:ring-1 focus:ring-slate-800"
+          />
+          <input
+            type="number"
+            name="wipLimit"
+            placeholder="Limite WIP (opcional)..."
+            min="1"
+            class="border rounded px-2 py-1.5 text-sm bg-white focus:outline-none focus:ring-1 focus:ring-slate-800"
+          />
+          <button type="submit" class="text-xs bg-slate-800 text-white font-medium rounded px-2 py-2 hover:bg-slate-700 transition">
+            Criar Coluna
+          </button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

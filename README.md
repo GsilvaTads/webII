@@ -64,7 +64,7 @@ Relatório de Cobertura esperado em 100% de linhas, ramificações e funções.
 
 ---
 
-## Como Instalar e Executar Localmente
+## Como instalar e rodar o código
 
 Pré-requisitos:
     - Node.js versão 18 ou superior

@@ -26,19 +26,19 @@ A aplicação foi organizada com separação rígida de responsabilidades:
 ---
 
 ## Atividades Implementadas
-- **Atividade 1*** — Criar cartão (`POST /cards`)
+- **Atividade 1** — Criar cartão (`POST /cards`)
 
-- Atividade 2 — Mover cartão entre colunas (`POST /cards/:id/move`)
+- **Atividade 2** — Mover cartão entre colunas (`POST /cards/:id/move`)
 
-- Atividade 3 — Editar cartão (`POST /cards/:id/update`)
+- **Atividade 3**— Editar cartão (`POST /cards/:id/update`)
 
-- Atividade 4 — Excluir cartão (`POST /cards/:id/delete`)
+- **Atividade 4** — Excluir cartão (`POST /cards/:id/delete`)
 
-- Atividade 5 — Aplicar limite de WIP na coluna "Em Andamento"
+- **Atividade 5** — Aplicar limite de WIP na coluna "Em Andamento"
 
-- Atividade 6 — Impedir título duplicado na mesma coluna
+- **Atividade 6** — Impedir título duplicado na mesma coluna
 
-- Atividade 7 — Criar novas colunas (`POST /columns`)
+- **Atividade 7** — Criar novas colunas (`POST /columns`)
 
 ---
 

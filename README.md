@@ -67,8 +67,7 @@ All files              |     100 |      100 |     100 |     100 |
   errors.ts            |     100 |      100 |     100 |     100 |                   
   http.ts              |     100 |      100 |     100 |     100 |   
 
-
-
+---
 
 ## Como Instalar e Executar Localmente
 Pré-requisitos:
@@ -99,7 +98,7 @@ Pré-requisitos:
 
     http://localhost:3002
 
-
+---
 
 ## Apresentação em Vídeo
 

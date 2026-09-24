@@ -71,6 +71,7 @@ All files              |     100 |      100 |     100 |     100 |
 
 
 
+
 ## Como Instalar e Executar Localmente
 Pré-requisitos:
     - Node.js versão 18 ou superior
@@ -96,7 +97,7 @@ Pré-requisitos:
     
     npm run dev
 
-4 - Acessar a interface gráfica no navegador web:
+6 - Acessar a interface gráfica no navegador web:
 
     http://localhost:3000.
 

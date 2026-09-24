@@ -87,18 +87,23 @@ Pré-requisitos:
 
 1 - Clonar o repositório:
     
-    `git clone [git clone https://github.com/2023008809@aluno.riogrande.ifrs.edu.br/webII.wiki.git](git clone https://github.com/2023008809@aluno.riogrande.ifrs.edu.br/webII.wiki.git)
-    cd webII
+   git clone https://github.com/GsilvaTads/webII.git
 
 2 - Instalar os pacotes necessários:
     Bash
 
-    `npm install`
+    npm install
+
+    npm test
+
+    npm run test:coverage`npm 
+
+    
 
 3 - Iniciar a aplicação em modo de desenvolvimento:
     Bash
 
-    `npm run dev`
+    npm run dev
 
 4 - Acessar a interface gráfica:
     No navegador web acessar: http://localhost:3000.

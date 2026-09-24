@@ -85,12 +85,13 @@ Demonstração prática gravada em vídeo — cobrindo o percurso pelas atividad
 
 Link dos vídeos/atividades:
 
-- **Atividade 1 e 2:** https://drive.google.com/file/d/1yy_-P2XGagAbGHBmtrJ5SqkPkLIfoSdM/view?usp=sharing
-- **Atividade 3:**
-- **Atividade 4:**
-- **Atividade 5:**
-- **Atividade 6:**
-- **Atividade 7:**
+- **Atividade 1,2:** [https://drive.google.com/file/d/1yy_-P2XGagAbGHBmtrJ5SqkPkLIfoSdM/view?usp=sharing](https://drive.google.com/file/d/1yy_-P2XGagAbGHBmtrJ5SqkPkLIfoSdM/view?usp=drive_link)
+- **Atividade   3:** https://drive.google.com/file/d/1A40BjTqkBkOKR7D_5-EQs-Fwyy84kUDU/view?usp=drive_link
+- **Atividade   4:** https://drive.google.com/file/d/1jl-lIGgIFq5RpjtsnGjevI6bTY5E2KnJ/view?usp=drive_link
+- **Atividade   5:** https://drive.google.com/file/d/1Nd18KieG_7-zEBDiMwKR1cEB7zcy7YRK/view?usp=drive_link
+- **Atividade   6:** https://drive.google.com/file/d/1SLdGZKxP82EtLKzz4zLMU5iiZ0tdEUWb/view?usp=drive_link
+- **Atividade   7:** https://drive.google.com/file/d/1jqLo9YYozZJEsFcdqQF2C4yCQHeNj8w_/view?usp=drive_link
+- **Interface    :** https://drive.google.com/file/d/1JU6FFbxyfZrFLELJSh0Bl38EpOtixM2Y/view?usp=drive_link
 
 
     

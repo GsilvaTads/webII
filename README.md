@@ -38,9 +38,7 @@ A aplicação foi organizada com separação rígida de responsabilidades:
 
 ## Suíte de Testes e Relatório de Cobertura
 
-A cobertura de código cobre 100% de linhas, ramificações, funções e instruções:
-
-Relatório de Cobertura Almejado:
+Relatório de Cobertura Almejado em 100% de linhas, ramificações e funções:
 
 
 File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
@@ -100,5 +98,17 @@ Pré-requisitos:
 6 - Acessar a interface gráfica no navegador web:
 
     http://localhost:3002
+
+
+
+## Apresentação em Vídeo
+
+Demonstração prática gravada em vídeo — cobrindo o percurso pelas atividades implementadas, navegação no código-fonte pelo VS Code e validação da suíte de testes.
+
+Link dos vídeos/atividades:
+
+    
+
+
 
 

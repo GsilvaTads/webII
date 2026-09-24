@@ -87,25 +87,26 @@ Pré-requisitos:
 
 1 - Clonar o repositório:
     
-   git clone https://github.com/GsilvaTads/webII.git
+    git clone https://github.com/GsilvaTads/webII.git
 
 2 - Instalar os pacotes necessários:
-    Bash
 
     npm install
 
+3 - Executar a suíte de testes completa:
+   
     npm test
 
-    npm run test:coverage`npm 
+4 - Executar a verificação com relatório de cobertura
 
+    npm run test:coverage   # 100% de cobertura no estado inicial
+
+5 - Iniciar a aplicação em modo de desenvolvimento:
     
-
-3 - Iniciar a aplicação em modo de desenvolvimento:
-    Bash
-
     npm run dev
 
-4 - Acessar a interface gráfica:
-    No navegador web acessar: http://localhost:3000.
+4 - Acessar a interface gráfica no navegador web:
+
+    http://localhost:3000.
 
 

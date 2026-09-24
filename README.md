@@ -40,9 +40,67 @@ A aplicação foi organizada com separação rígida de responsabilidades:
 
 A cobertura de código cobre 100% de linhas, ramificações, funções e instruções:
 
-```bash
-# Executar a suíte de testes completa
-npm test
+`bash`
+`# Executar a suíte de testes completa`
+`npm test`
 
-# Executar a verificação com relatório de cobertura
-npm run test:coverage
+`# Executar a verificação com relatório de cobertura`
+`npm run test:coverage`
+
+
+## Relatório de Cobertura Almejado:
+
+-----------------------|---------|----------|---------|---------|-------------------
+File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+-----------------------|---------|----------|---------|---------|-------------------
+All files              |     100 |      100 |     100 |     100 |                   
+ src                   |     100 |      100 |     100 |     100 |                   
+  routes.ts            |     100 |      100 |     100 |     100 |                   
+  seed.ts              |     100 |      100 |     100 |     100 |                   
+  server.ts            |     100 |      100 |     100 |     100 |                   
+ src/boards            |     100 |      100 |     100 |     100 |                   
+  Board.ts             |     100 |      100 |     100 |     100 |                   
+  BoardColumnChecker.ts|     100 |      100 |     100 |     100 |                   
+  BoardController.ts   |     100 |      100 |     100 |     100 |                   
+  BoardRepository.ts   |     100 |      100 |     100 |     100 |                   
+  Column.ts            |     100 |      100 |     100 |     100 |                   
+  boardView.ts         |     100 |      100 |     100 |     100 |                   
+  errors.ts            |     100 |      100 |     100 |     100 |                   
+ src/cards             |     100 |      100 |     100 |     100 |                   
+  Card.ts              |     100 |      100 |     100 |     100 |                   
+  CardController.ts    |     100 |      100 |     100 |     100 |                   
+  CardRepository.ts    |     100 |      100 |     100 |     100 |                   
+  cardView.ts          |     100 |      100 |     100 |     100 |                   
+  errors.ts            |     100 |      100 |     100 |     100 |                   
+ src/shared            |     100 |      100 |     100 |     100 |                   
+  errorHandler.ts      |     100 |      100 |     100 |     100 |                   
+  errors.ts            |     100 |      100 |     100 |     100 |                   
+  http.ts              |     100 |      100 |     100 |     100 |                   
+-----------------------|---------|----------|---------|---------|-------------------
+
+
+
+## Como Instalar e Executar Localmente
+Pré-requisitos:
+    - Node.js versão 18 ou superior
+    - Gerenciador de dependências npm
+
+1 - Clonar o repositório:
+    
+    `git clone [git clone https://github.com/2023008809@aluno.riogrande.ifrs.edu.br/webII.wiki.git](git clone https://github.com/2023008809@aluno.riogrande.ifrs.edu.br/webII.wiki.git)
+    cd webII
+
+2 - Instalar os pacotes necessários:
+    Bash
+
+    `npm install`
+
+3 - Iniciar a aplicação em modo de desenvolvimento:
+    Bash
+
+    `npm run dev`
+
+4 - Acessar a interface gráfica:
+    No navegador web acessar: http://localhost:3000.
+
+

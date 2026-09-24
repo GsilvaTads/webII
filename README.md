@@ -40,15 +40,7 @@ A aplicação foi organizada com separação rígida de responsabilidades:
 
 A cobertura de código cobre 100% de linhas, ramificações, funções e instruções:
 
-`bash`
-`# Executar a suíte de testes completa`
-`npm test`
-
-`# Executar a verificação com relatório de cobertura`
-`npm run test:coverage`
-
-
-## Relatório de Cobertura Almejado:
+Relatório de Cobertura Almejado:
 
 -----------------------|---------|----------|---------|---------|-------------------
 File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 

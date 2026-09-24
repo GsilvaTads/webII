@@ -10,7 +10,7 @@ Aplicação web de gerenciamento de tarefas no estilo **Kanban** desenvolvida em
 - **Backend / Servidor:** Node.js com Express
 - **Camada de Visão (View):** EJS com Tailwind CSS
 - **Testes Automatizados:** Vitest com provedor de cobertura `@vitest/coverage-v8`
-- **Testes de Integração HTTP:** Supertest(https://github.com/ladjs/supertest)
+- **Testes de Integração HTTP:** Supertest
 
 ---
 

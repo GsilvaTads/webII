@@ -1,10 +1,10 @@
-# 📌 Documentação do Projeto: Kanban MVC em TypeScript
+# Documentação do Projeto: Kanban MVC em TypeScript
 
 Aplicação web de gerenciamento de tarefas no estilo **Kanban** desenvolvida em **TypeScript** com **Express**, estruturada sob o padrão arquitetural **MVC (Model-View-Controller)**, com desacoplamento via **Ports & Adapters (Inversão de Dependência)**, aderência ao padrão **Post/Redirect/Get (PRG)** e suíte de testes automatizados com **100% de cobertura**.
 
 ---
 
-## 🚀 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - **Linguagem:** [TypeScript](https://www.typescriptlang.org/) (ESM nativo)
 - **Backend / Servidor:** [Node.js](https://nodejs.org/) com [Express](https://expressjs.com/)
@@ -14,7 +14,7 @@ Aplicação web de gerenciamento de tarefas no estilo **Kanban** desenvolvida em
 
 ---
 
-## 🏛️ Arquitetura e Decisões de Design
+## Arquitetura e Decisões de Design
 
 A aplicação foi organizada com separação rígida de responsabilidades:
 
@@ -25,7 +25,7 @@ A aplicação foi organizada com separação rígida de responsabilidades:
 
 ---
 
-## 📋 Atividades Implementadas
+## Atividades Implementadas
 
 | Atividade | Descrição | Arquivos Modificados / Criados |
 | :--- | :--- | :--- |
@@ -36,14 +36,10 @@ A aplicação foi organizada com separação rígida de responsabilidades:
 | **Atividade 5** | Limite de WIP (*Work in Progress*) com bloqueio HTTP 409 (*Conflict*) no `move` e no `create`. | `src/cards/CardController.ts`, `src/cards/errors.ts`, `src/shared/errorHandler.ts` |
 | **Atividade 6** | Prevenção de cartões com títulos duplicados na mesma coluna (HTTP 409 Conflict). | `src/cards/CardRepository.ts`, `src/cards/CardController.ts` |
 | **Atividade 7** | Criação dinâmica de novas colunas com limite opcional de WIP via `POST /columns`. | `src/boards/Board.ts`, `src/boards/BoardController.ts`, `src/views/board/index.ejs` |
-| **Atividade 8** | Página dedicada para exibição dos detalhes de um cartão (`GET /cards/:id`). | `src/cards/CardController.ts`, `src/cards/cardView.ts`, `src/views/cards/show.ejs` |
-| **Atividade 9** | Mecanismo de busca global de cartões por título com filtro *case-insensitive* (`GET /cards/search`). | `src/cards/CardController.ts`, `src/views/cards/search.ejs` |
-| **Atividade 10** | Desacoplamento estrutural aplicando Inversão de Dependência (DIP) com `ColumnChecker`. | `src/cards/ColumnChecker.ts`, `src/boards/BoardColumnChecker.ts`, `src/server.ts` |
-| **Atividade 11** | Suporte a múltiplos quadros isolados com rotas parametrizadas (`/boards/:boardId`). | `src/boards/BoardRepository.ts`, `src/routes.ts`, `src/views/board/index.ejs` |
 
 ---
 
-## 🧪 Suíte de Testes e Relatório de Cobertura
+## Suíte de Testes e Relatório de Cobertura
 
 A cobertura de código cobre 100% de linhas, ramificações, funções e instruções:
 

@@ -6,7 +6,7 @@ Aplicação web de gerenciamento de tarefas no estilo **Kanban** desenvolvida em
 
 ## Tecnologias Utilizadas
 
-- **Linguagem:** [TypeScript](https://www.typescriptlang.org/) (ESM nativo)
+- **Linguagem:** [TypeScript]
 - **Backend / Servidor:** [Node.js](https://nodejs.org/) com [Express](https://expressjs.com/)
 - **Camada de Visão (View):** [EJS](https://ejs.co/) (Embedded JavaScript) estilizado com [Tailwind CSS](https://tailwindcss.com/)
 - **Testes Automatizados:** [Vitest](https://vitest.dev/) com provedor de cobertura `@vitest/coverage-v8`

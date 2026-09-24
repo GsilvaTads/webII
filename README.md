@@ -19,9 +19,9 @@ Aplicação web de gerenciamento de tarefas no estilo **Kanban** desenvolvida em
  
 **3. Uma alternativa seria o `Board` "possuir" a lista de ids de cartões**
      (em vez de `CardController` perguntar ao `BoardRepository`):
-- O que resolveria?
+- ***O que resolveria?**
 Centraliza a vida do código e gerenciamento nas colunas(boards). O módulo cards não precisaria mais consultar o BoardRepository para validar colunas ou limites de WIP, eliminando a dependência de cards -> boards.
-- O que criaria de novo: 
+- **O que criaria de novo:**
 Complexidade de sincronização e transação. Qualquer operação de criar, mover ou deletar um cartão exigiria atualizar o array de IDs dentro da entidade Board, exigindo mecanismos de consistência concorrente (evitar que dois cartões sejam movidos ao mesmo tempo corrompendo a lista).
 
 ---

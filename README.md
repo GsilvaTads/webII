@@ -26,7 +26,7 @@ A aplicação foi organizada com separação rígida de responsabilidades:
 ---
 
 ## Atividades Implementadas
-- Atividade 1 — Criar cartão (`POST /cards`)
+- **Atividade 1*** — Criar cartão (`POST /cards`)
 
 - Atividade 2 — Mover cartão entre colunas (`POST /cards/:id/move`)
 

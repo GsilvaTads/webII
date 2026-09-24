@@ -12,10 +12,10 @@ Aplicação web de gerenciamento de tarefas no estilo **Kanban** desenvolvida em
 ## Discussão obrigatória (respostas antes de codar)
 
 **1. Esse acoplamento é um problema real ou aceitável para o tamanho atual?**
-Aceitável em um contexto simples, se introduzir operções extras e demais abstraçẽos neste contexto, aumentaria a complexidade sem ganho imediato mensurável, se a aplicação crescer pode sim se tornar um problema em funcionalidades onde será necessário mais trabalho e tempo para desacoplar os módulos.
+- Aceitável em um contexto simples, se introduzir operções extras e demais abstraçẽos neste contexto, aumentaria a complexidade sem ganho imediato mensurável, se a aplicação crescer pode sim se tornar um problema em funcionalidades onde será necessário mais trabalho e tempo para desacoplar os módulos.
  
 **2. Se "cards" precisasse virar um serviço separado no futuro, o que quebraria primeiro?**
-Quebraria primeiro as operações de criação e movimentação dos cartões, pois dependem de memória para validaões(cartões exixtente e limites de colunas). Em um serviços separados vai exigir mais da aplicação podendo ocasionar lentidão e falhas parciais.
+- Quebraria primeiro as operações de criação e movimentação dos cartões, pois dependem de memória para validaões(cartões exixtente e limites de colunas). Em um serviços separados vai exigir mais da aplicação podendo ocasionar lentidão e falhas parciais.
  
 **3. Uma alternativa seria o `Board` "possuir" a lista de ids de cartões**
      (em vez de `CardController` perguntar ao `BoardRepository`):

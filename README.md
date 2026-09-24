@@ -1,9 +1,9 @@
 # Projeto: Kanban MVC em TypeScript
 
-Disciplina: WebII
-Professor: Vinicius
-Aluno: Gustavo Luis Silva
-Semestre: 2026/2
+- Disciplina: WebII
+- Professor: Vinicius
+- Aluno: Gustavo Luis Silva
+- Semestre: 2026/2
 
 Aplicação web de gerenciamento de tarefas no estilo **Kanban** desenvolvida em **TypeScript** com **Express**, estruturada sob o padrão  **MVC (Model-View-Controller)**, com desacoplamento via **Ports & Adapters (Inversão de Dependência)**, aderência ao padrão **Post/Redirect/Get (PRG)** e suíte de testes automatizados com **100% de cobertura**.
 

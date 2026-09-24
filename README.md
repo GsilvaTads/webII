@@ -91,7 +91,7 @@ Pré-requisitos:
 
 4 - Executar a verificação com relatório de cobertura
 
-    npm run test:coverage   # 100% de cobertura no estado inicial
+    npm run test:coverage
 
 5 - Iniciar a aplicação em modo de desenvolvimento:
     
@@ -99,6 +99,6 @@ Pré-requisitos:
 
 6 - Acessar a interface gráfica no navegador web:
 
-    http://localhost:3000.
+    http://localhost:3002
 
 

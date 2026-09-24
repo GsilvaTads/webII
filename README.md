@@ -79,12 +79,13 @@ Pré-requisitos:
 
 ---
 
-## Apresentação em Vídeo
+### Apresentação em Vídeo
 
 Demonstração prática gravada em vídeo — cobrindo o percurso pelas atividades implementadas, navegação no código-fonte pelo VS Code e validação da suíte de testes.
 
 Link dos vídeos/atividades:
 
+##Atividade 1 e 2:
 
 https://drive.google.com/file/d/1yy_-P2XGagAbGHBmtrJ5SqkPkLIfoSdM/view?usp=sharing
     

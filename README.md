@@ -43,34 +43,7 @@ A aplicação foi organizada com separação rígida de responsabilidades:
 
 ## Suíte de Testes e Relatório de Cobertura
 
-Relatório de Cobertura Almejado em 100% de linhas, ramificações e funções:
-
-
-File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
------------------------|---------|----------|---------|---------|-------------------
-All files              |     100 |      100 |     100 |     100 |                   
- src                   |     100 |      100 |     100 |     100 |                   
-  routes.ts            |     100 |      100 |     100 |     100 |                   
-  seed.ts              |     100 |      100 |     100 |     100 |                   
-  server.ts            |     100 |      100 |     100 |     100 |                   
- src/boards            |     100 |      100 |     100 |     100 |                   
-  Board.ts             |     100 |      100 |     100 |     100 |                   
-  BoardColumnChecker.ts|     100 |      100 |     100 |     100 |                   
-  BoardController.ts   |     100 |      100 |     100 |     100 |                   
-  BoardRepository.ts   |     100 |      100 |     100 |     100 |                   
-  Column.ts            |     100 |      100 |     100 |     100 |                   
-  boardView.ts         |     100 |      100 |     100 |     100 |                   
-  errors.ts            |     100 |      100 |     100 |     100 |                   
- src/cards             |     100 |      100 |     100 |     100 |                   
-  Card.ts              |     100 |      100 |     100 |     100 |                   
-  CardController.ts    |     100 |      100 |     100 |     100 |                   
-  CardRepository.ts    |     100 |      100 |     100 |     100 |                   
-  cardView.ts          |     100 |      100 |     100 |     100 |                   
-  errors.ts            |     100 |      100 |     100 |     100 |                   
- src/shared            |     100 |      100 |     100 |     100 |                   
-  errorHandler.ts      |     100 |      100 |     100 |     100 |                   
-  errors.ts            |     100 |      100 |     100 |     100 |                   
-  http.ts              |     100 |      100 |     100 |     100 |   
+Relatório de Cobertura esperado em 100% de linhas, ramificações e funções.
 
 ---
 

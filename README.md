@@ -48,26 +48,33 @@ Relatório de Cobertura esperado em 100% de linhas, ramificações e funções.
 ---
 
 ## Como Instalar e Executar Localmente
+
 Pré-requisitos:
     - Node.js versão 18 ou superior
     - Gerenciador de dependências npm
 
-1 - Clonar o repositório:    
+1 - Clonar o repositório:
+
     git clone https://github.com/GsilvaTads/webII.git
 
 2 - Instalar os pacotes necessários:
+
     npm install
 
-3 - Executar a suíte de testes completa:   
+3 - Executar a suíte de testes completa:
+
     npm test
 
-4 - Executar a verificação com relatório de cobertura
+4 - Executar a verificação com relatório de cobertura:
+
     npm run test:coverage
 
-5 - Iniciar a aplicação em modo de desenvolvimento:    
+5 - Iniciar a aplicação em modo de desenvolvimento:
+
     npm run dev
 
 6 - Acessar a interface gráfica no navegador web:
+
     http://localhost:3002
 
 ---

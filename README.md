@@ -85,6 +85,8 @@ Demonstração prática gravada em vídeo — cobrindo o percurso pelas atividad
 
 Link dos vídeos/atividades:
 
+
+https://drive.google.com/file/d/1yy_-P2XGagAbGHBmtrJ5SqkPkLIfoSdM/view?usp=sharing
     
 
 
